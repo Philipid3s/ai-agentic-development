@@ -1,4 +1,4 @@
-# Claude Code — Custom Commands (Plugins)
+﻿# Claude Code - Custom Commands (Plugins)
 
 Custom commands extend Claude Code with slash commands (`/command-name`).
 Each command is a `.md` file whose content becomes the agent's system prompt when invoked.
@@ -10,15 +10,15 @@ Each command is a `.md` file whose content becomes the agent's system prompt whe
 | `<project>/.claude/commands/` | Project-only | `/deploy`, `/review` |
 | `~/.claude/commands/` | Global (all projects) | `/sentinel` |
 
-- **Filename = command name** — `sentinel.md` becomes `/sentinel`
-- **File content = prompt** — defines role, personality, instructions, output format
-- **Invoked like any slash command** — `/sentinel` in a Claude Code session
+- **Filename = command name** - `sentinel.md` becomes `/sentinel`
+- **File content = prompt** - defines role, personality, instructions, output format
+- **Invoked like any slash command** - `/sentinel` in a Claude Code session
 
 ## Installed Commands
 
 ### /sentinel (global)
 - **Location:** `~/.claude/commands/sentinel.md`
-- **Role:** Security specialist — audits code for vulnerabilities
+- **Role:** Security specialist - audits code for vulnerabilities
 - **Features:** OWASP Top 10 checklist, severity-based findings, structured output format
 - **Usage:** `/sentinel` to run a security audit on the current codebase
 
@@ -39,3 +39,4 @@ Each command is a `.md` file whose content becomes the agent's system prompt whe
 3. Invoke with `/filename` in any Claude Code session
 
 See [sentinel.md](~/.claude/commands/sentinel.md) for a well-structured example.
+

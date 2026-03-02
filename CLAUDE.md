@@ -1,4 +1,4 @@
-# CLAUDE.md
+﻿# CLAUDE.md
 
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
@@ -47,15 +47,15 @@ The test: Every changed line should trace directly to the user's request.
 **Define success criteria. Loop until verified.**
 
 Transform tasks into verifiable goals:
-- "Add validation" → "Write tests for invalid inputs, then make them pass"
-- "Fix the bug" → "Write a test that reproduces it, then make it pass"
-- "Refactor X" → "Ensure tests pass before and after"
+- "Add validation" -> "Write tests for invalid inputs, then make them pass"
+- "Fix the bug" -> "Write a test that reproduces it, then make it pass"
+- "Refactor X" -> "Ensure tests pass before and after"
 
 For multi-step tasks, state a brief plan:
 ```
-1. [Step] → verify: [check]
-2. [Step] → verify: [check]
-3. [Step] → verify: [check]
+1. [Step] -> verify: [check]
+2. [Step] -> verify: [check]
+3. [Step] -> verify: [check]
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
@@ -66,8 +66,9 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 - After modifications, run existing tests to confirm nothing broke.
 - If no tests exist for the changed code, propose creating them.
-- Don't write tests silently — suggest scope and approach first.
+- Don't write tests silently - suggest scope and approach first.
 
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
+
